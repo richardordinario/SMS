@@ -1,0 +1,156 @@
+body{background-color: #F5F5F5;}
+*{font-family: Arial, Helvetica, sans-serif;}
+
+#topnav{
+    position: fixed;
+    height: 50px;
+    z-index: 1;
+    list-style-type: none;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 1620px;
+    margin-left: 300px;
+    background-color: #f5f6fa; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#f5f6fa,#f5f6fa, #dcdde1); 
+    transition: 0.5s;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1), 0 1px 1px rgba(0,0,0,0.1);
+}
+#topnav a {
+    display: block;
+    text-align: center;
+    float: right;
+    padding: 16px 16px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #777;
+}
+#sidenav{
+    list-style-type: none;
+    overflow-x: hidden;
+    width: 300px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1;
+    box-shadow: 2px 0 8px 0 rgba(0,0,0,0.2);
+    background-color: #fff;
+    padding-top: 60px;
+    transition: margin-left .5s;
+}
+#sidenav a{
+    padding: 13px 8px 13px 20px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #777;
+    display: block;
+   
+}
+#main {margin:auto;margin-left: 310px;margin-top: 55px;transition: margin-left .5s;}
+.pic{height: 50px;width: 50px; margin-top: -50px;margin-bottom: 40px;margin-left: 20px;}
+.welcome{margin-top: -40px;font-size: 14px;position: absolute;color: #777;font-weight: 600;margin-left: 5px;}
+.user{margin-top: -20px;font-size: 20px;position: absolute;color: #777;font-weight: 600;margin-left: 5px;}
+
+#sidenav-show {display: none;}
+
+#content-title {color: #888;padding-top: 25px;padding-left: 10px;}
+
+.user-mobile {display: none;}
+
+#student-show{float: right; margin-right: 10px; font-size: 17px;}
+#student-hide{float: right; margin-right: 10px; font-size: 17px;display: none;}
+
+.container input[type=text] {
+    width: 100%;
+    padding: 8px 12px;
+    margin: 8px 0;
+    color: #666;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container input[type=submit] {
+    width: 100px;
+    background-color: #f5f6fa; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#f5f6fa,#f5f6fa, #dcdde1); 
+    color: #555;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border: 1px solid #999;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.container-modal input[type=submit] {
+    width: 120px;
+    background-color: #f5f6fa; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#f5f6fa,#f5f6fa, #dcdde1); 
+    color: #555;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border: 1px solid #999;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 367px;
+}
+#clear{
+    width: 100px;
+    background-color: #f5f6fa; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#f5f6fa,#f5f6fa, #dcdde1); 
+    color: #555;
+    padding: 8px 12px;
+    margin: 6px 0;
+    border: 1px solid #999;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.container select {
+    width: 245px;
+    padding: 8px 12px;
+    margin: 8px 0;
+    color: #666;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+label {font-size: 13px;color: #777;font-weight: 600;}
+.container {width:500px;border-radius: 2px;background-color: #fff;padding: 20px;float: left;box-shadow: 0px 6px 8px 0 rgba(0,0,0,0.2);}
+
+.table-container{
+    float: right;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 550px;
+    padding: 20px;
+    border-radius: 2px;
+    width: 1000px;
+    font-size: 14px;
+    box-shadow: 0px 6px 8px 0 rgba(0,0,0,0.2);
+}
+table {
+    width: 100%;
+    font-size:14px;
+}
+
+#student_data, #course_data ,#subject_data ,#faculty_data ,#admin_data ,#schedule_data th {
+    text-align: left;
+    color: #888;
+    font-weight: 600;
+    font-size: 13px;
+}
+#student_data, #course_data ,#subject_data ,#faculty_data ,#admin_data ,#schedule_data td {
+    text-align: left;
+    color: #777;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 768px) {
+    #sidenav{display: none;}
+    #main{margin-left: 0px;}
+    #topnav{margin-left: 0px;}
+}
+hr.new1{ border: 1px solid #dfe4ea;border-radius: 5px;}
+.required-logo{color: red;margin-left: 10px;}
